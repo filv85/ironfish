@@ -4,7 +4,7 @@
 // it catches all exceptions rather than only exceptions that would
 // crash the process
 if (process.platform !== 'win32') {
-  require('segfault-handler').registerHandler('segfault.log')
+  require('@ironfish/rust-nodejs').initSignalHandler()
 }
 
 if(process.versions.node.split('.')[0] !== '18') {
