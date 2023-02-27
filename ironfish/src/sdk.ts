@@ -1,7 +1,12 @@
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+<<<<<<< HEAD
 import { triggerSegfault } from '@ironfish/rust-nodejs'
+=======
+import { initSegfaultHandler, triggerSeg, triggerSeg2 } from '@ironfish/rust-nodejs'
+import crashy from 'crashy'
+>>>>>>> ed7799bc (testing wip)
 import {
   Config,
   ConfigOptions,
@@ -184,6 +189,8 @@ export class IronfishSdk {
     autoSeed?: boolean
     privateIdentity?: PrivateIdentity
   } = {}): Promise<IronfishNode> {
+    crashy.crashyHello()
+    crashy.crashyTriggerSegfault()
     const webSocket = WebSocketClient as IsomorphicWebSocketConstructor
 
     const node = await IronfishNode.init({

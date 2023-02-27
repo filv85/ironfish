@@ -17,6 +17,7 @@
     "build/**/*.json"
   ],
   "dependencies": {
+    "crashy": "*",
     "@ethersproject/bignumber": "5.7.0",
     "@ironfish/rust-nodejs": "0.1.27",
     "@napi-rs/blake-hash": "1.3.1",

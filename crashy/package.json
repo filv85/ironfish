@@ -1,0 +1,13 @@
+{
+    "name": "crashy",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "files": [
+        "crashy.node"
+    ],
+    "scripts": {
+        "test": "node ./test.js"
+    },
+    "author": ""
+}

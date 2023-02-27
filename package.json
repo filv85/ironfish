@@ -11,7 +11,8 @@
     "config/eslint-config-ironfish",
     "config/eslint-plugin-ironfish",
     "ironfish",
-    "ironfish-rust-nodejs"
+    "ironfish-rust-nodejs",
+    "crashy"
   ],
   "scripts": {
     "build": "lerna run build",
