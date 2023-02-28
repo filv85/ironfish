@@ -4,7 +4,8 @@
 // it catches all exceptions rather than only exceptions that would
 // crash the process
 if (process.platform !== 'win32') {
-  require('segfault-handler').registerHandler('segfault.log')
+  // require('segfault-handler').registerHandler('segfault.log')
+  require('fault-handler').initFaultHandler()
 }
 
 if(process.versions.node.split('.')[0] !== '18') {
